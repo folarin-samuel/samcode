@@ -64,22 +64,22 @@ def main():
     pygame.display.set_caption('Flappy Box')
 
     # numbers sprites for score display
-    IMAGES['numbers'] = (pygame.image.load('0.png').convert_alpha(), pygame.image.load('1.png').convert_alpha(), pygame.image.load('2.png').convert_alpha(), pygame.image.load('3.png').convert_alpha(), pygame.image.load('4.png').convert_alpha(), pygame.image.load('5.png').convert_alpha(), pygame.image.load('6.png').convert_alpha(), pygame.image.load('7.png').convert_alpha(), pygame.image.load('8.png').convert_alpha(), pygame.image.load('assets/sprites/9.png').convert_alpha())
+    IMAGES['numbers'] = (pygame.image.load('0.png').convert_alpha(), pygame.image.load('1.png').convert_alpha(), pygame.image.load('2.png').convert_alpha(), pygame.image.load('3.png').convert_alpha(), pygame.image.load('4.png').convert_alpha(), pygame.image.load('5.png').convert_alpha(), pygame.image.load('6.png').convert_alpha(), pygame.image.load('7.png').convert_alpha(), pygame.image.load('8.png').convert_alpha(), pygame.image.load('9.png').convert_alpha())
 
     # game over sprite
-    IMAGES['gameover'] = pygame.image.load('assets/sprites/gameover.png').convert_alpha()
+    IMAGES['gameover'] = pygame.image.load('gameover.png').convert_alpha()
     # message sprite for welcome screen
-    IMAGES['message'] = pygame.image.load('assets/sprites/message.png').convert_alpha()
+    IMAGES['message'] = pygame.image.load('message.png').convert_alpha()
     # base (ground) sprite
-    IMAGES['base'] = pygame.image.load('assets/sprites/base.png').convert_alpha()
+    IMAGES['base'] = pygame.image.load('base.png').convert_alpha()
 
     # sounds
     soundExt = '.ogg'
 
-    SOUNDS['die'] = pygame.mixer.Sound('assets/audio/die' + soundExt)
-    SOUNDS['hit'] = pygame.mixer.Sound('assets/audio/hit' + soundExt)
-    SOUNDS['point'] = pygame.mixer.Sound('assets/audio/point' + soundExt)
-    SOUNDS['wing'] = pygame.mixer.Sound('assets/audio/wing' + soundExt)
+    SOUNDS['die'] = pygame.mixer.Sound('die' + soundExt)
+    SOUNDS['hit'] = pygame.mixer.Sound('hit' + soundExt)
+    SOUNDS['point'] = pygame.mixer.Sound('point' + soundExt)
+    SOUNDS['wing'] = pygame.mixer.Sound('wing' + soundExt)
 
     while True:
         # select random background sprites
