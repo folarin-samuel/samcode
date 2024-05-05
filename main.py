@@ -19,34 +19,34 @@ IMAGES, SOUNDS, HITMASKS = {}, {}, {}
 PLAYERS_LIST = (
     # red box
     (
-        'assets/sprites/redbox-upflap.png',
-        'assets/sprites/redbox-midflap.png',
-        'assets/sprites/redbox-downflap.png',
+        'redbox-upflap.png',
+        'redbox-midflap.png',
+        'redbox-downflap.png',
     ),
     # blue box
     (
-        'assets/sprites/bluebox-upflap.png',
-        'assets/sprites/bluebox-midflap.png',
-        'assets/sprites/bluebox-downflap.png',
+        'bluebox-upflap.png',
+        'bluebox-midflap.png',
+        'bluebox-downflap.png',
     ),
     # yellow box
     (
-        'assets/sprites/yellowbox-upflap.png',
-        'assets/sprites/yellowbox-midflap.png',
-        'assets/sprites/yellowbox-downflap.png',
+        'yellowbox-upflap.png',
+        'yellowbox-midflap.png',
+        'yellowbox-downflap.png',
     ),
 )
 
 # list of backgrounds
 BACKGROUNDS_LIST = (
-    'assets/sprites/background-day.png',
-    'assets/sprites/background-night.png',
+    'background-day.png',
+    'background-night.png',
 )
 
 # list of pipes
 PIPES_LIST = (
-    'assets/sprites/pipe-green.png',
-    'assets/sprites/pipe-red.png',
+    'pipe-green.png',
+    'pipe-red.png',
 )
 
 try:
@@ -64,7 +64,7 @@ def main():
     pygame.display.set_caption('Flappy Box')
 
     # numbers sprites for score display
-    IMAGES['numbers'] = (pygame.image.load('assets/sprites/0.png').convert_alpha(), pygame.image.load('assets/sprites/1.png').convert_alpha(), pygame.image.load('assets/sprites/2.png').convert_alpha(), pygame.image.load('assets/sprites/3.png').convert_alpha(), pygame.image.load('assets/sprites/4.png').convert_alpha(), pygame.image.load('assets/sprites/5.png').convert_alpha(), pygame.image.load('assets/sprites/6.png').convert_alpha(), pygame.image.load('assets/sprites/7.png').convert_alpha(), pygame.image.load('assets/sprites/8.png').convert_alpha(), pygame.image.load('assets/sprites/9.png').convert_alpha())
+    IMAGES['numbers'] = (pygame.image.load('0.png').convert_alpha(), pygame.image.load('1.png').convert_alpha(), pygame.image.load('2.png').convert_alpha(), pygame.image.load('3.png').convert_alpha(), pygame.image.load('4.png').convert_alpha(), pygame.image.load('5.png').convert_alpha(), pygame.image.load('6.png').convert_alpha(), pygame.image.load('7.png').convert_alpha(), pygame.image.load('8.png').convert_alpha(), pygame.image.load('assets/sprites/9.png').convert_alpha())
 
     # game over sprite
     IMAGES['gameover'] = pygame.image.load('assets/sprites/gameover.png').convert_alpha()
